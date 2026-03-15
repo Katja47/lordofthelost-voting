@@ -1,0 +1,277 @@
+/** GENERAL STYLE*/
+
+* {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.footer {
+    text-align: center;
+    padding: 32px;
+    background-color: #000000;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+/** Icons */
+.fa-icons {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    color: white;
+}
+
+.fa-icons:hover {
+    opacity: 0.7;
+}
+
+.fa-icons::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+/** SINGLE PAGES */
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal column-2s that sits next to each other */
+.column-2 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column-2 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.column-2 iframe {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+
+}
+
+.spotify {
+    margin-top: 8px;
+    width: 100%;
+}
+
+.full-video {
+    width: 100%;
+    height: fit-content;
+    min-height: 560px;
+    max-height: 1000px;
+    vertical-align: middle;
+    margin: 8px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    border: none;
+}
+
+
+/* Responsive layout - makes a one column-2-layout instead of two column-2s */
+@media screen and (max-width: 800px) {
+    .column-2 {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Responsive layout - makes the one column stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column-2 {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: black;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    jusify-content: center;
+    align-items: center;
+}
+
+/* LANDiNG PAGE */
+
+/* Position text in the middle of the page/image */
+.landingpage-content {
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+.landingpage-bg-image {
+    /* The image used */
+    background-image: url("/img/lotl_woms_cover.jpg");
+
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
