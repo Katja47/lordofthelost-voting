@@ -2,153 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="css/LOTL_voting.css" rel="stylesheet" type="text/css">
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LORD OF THE LOST | Setlist Voting</title>
-    <!-- Favicon-->
-    <link href="img/LOTL_ON_favicon.ico" rel="icon" type="image/x-icon"/>
-    <style>
-
-        .background-image {
-            background-image: url("/img/LOTL_ON_bandpic.jpg");
-            background-position: top;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 0;
-
-            filter: blur(8px);
-            -webkit-filter: blur(8px);
-
-            pointer-events: none;
-        }
-
-        .content {
-            position: relative;
-            z-index: 1;
-            isolation: isolate;
-            background-color: rgba(0, 0, 0, 0.4);
-            border: 3px solid #f1f1f1;
-
-            padding: 20px;
-            text-align: center;
-
-            min-height: 100vh;
-        }
-
-
-        p {
-            opacity: 0;
-            color: #ce0c97;
-            animation-fill-mode: both;
-            -webkit-animation-duration: 1.5s;
-            -webkit-animation-delay: .6s;
-            -webkit-animation-fill-mode: both;
-            animation-name: fadeInUp;
-            -webkit-animation-name: fadeInUp;
-        }
-
-        a {
-            opacity: 0;
-            animation-fill-mode: both;
-            -webkit-animation-duration: 1.5s;
-            -webkit-animation-delay: .8s;
-            -webkit-animation-fill-mode: both;
-            animation-name: fadeInUp;
-            -webkit-animation-name: fadeInUp;
-        }
-
-        body p {
-            text-align: center;
-        }
-
-
-        /* –––––– LOTL ANIMATIONS –––––– */
-        /* –––––– (c) Timo Kahl –––––– */
-
-        @keyframes fadeInUp {
-            from {
-                transform: translate3d(0, 40px, 0)
-            }
-
-            to {
-                transform: translate3d(0, 0, 0);
-                opacity: 1
-            }
-        }
-
-        @-webkit-keyframes fadeInUp {
-            from {
-                transform: translate3d(0, 40px, 0)
-            }
-
-            to {
-                transform: translate3d(0, 0, 0);
-                opacity: 1
-            }
-        }
-
-    </style>
+    <!--Favicon-->
+    <link href="img/LOTL_ON_favicon.ico" rel="icon" type="image/x-icon">
+    <!--CSS-->
+    <link href="css/LOTL_voting_v3.css" rel="stylesheet" type="text/css">
+    <!--Icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
 </head>
 
+<body class="voting-page">
+    <div class="background-image" aria-hidden="true"></div>
 
-<body>
-
-<div class="background-image"></div>
-
-<div class="content">
-
-    <!-- Google Form -->
-    <iframe frameborder="0"
-            height="1300"
-            marginheight="0"
-            marginwidth="0"
+    <main class="content" aria-label="Setlist Voting">
+        <iframe
+            class="vote-frame"
             src="https://docs.google.com/forms/d/e/1FAIpQLScaSgkz0y2gUHdvMDUkpivNuQuIS_6egkeZgTnVLlaIz-WR6Q/viewform?embedded=true"
-            width="640">Wird geladen…
-    </iframe>
-</div>
+            title="Lord of the Lost – Setlist Voting"
+            loading="eager">
+            Wird geladen…
+        </iframe>
+    </main>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- SOCIAL MEDIA -->
+        <div class="center social-links" aria-label="Social Media Links">
+            <a class="fab fa-facebook" href="https://www.facebook.com/lordofthelost" target="_blank" rel="noopener noreferrer" aria-label="Facebook"></a>
+            <a class="fab fa-instagram" href="https://www.instagram.com/officiallordofthelost" target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a>
+            <a class="fab fa-spotify" href="https://open.spotify.com/artist/28eLrVsohdXynlnIzQ2VvI" target="_blank" rel="noopener noreferrer" aria-label="Spotify"></a>
+            <a class="fab fa-vk" href="https://vk.com/lord_of_the_lost" target="_blank" rel="noopener noreferrer" aria-label="VK"></a>
+            <a class="fab fa-youtube" href="https://www.youtube.com/channel/UCKmi2SZRPoCqXA01qtzIqrw" target="_blank" rel="noopener noreferrer" aria-label="YouTube"></a>
+            <a class="fab fa-twitter" href="https://twitter.com/lordofthelost?lang=de" target="_blank" rel="noopener noreferrer" aria-label="Twitter"></a>
+            <a class="fab fa-telegram" href="https://t.me/lordtele" target="_blank" rel="noopener noreferrer" aria-label="Telegram"></a>
+            <a class="fab fa-twitch" href="https://www.twitch.tv/officiallordofthelost" target="_blank" rel="noopener noreferrer" aria-label="Twitch"></a>
+            <a class="fab fa-tiktok" href="https://www.tiktok.com/@lordofthelostofficial" target="_blank" rel="noopener noreferrer" aria-label="TikTok"></a>
+        </div>
+
+        <p class="copyright">&#169; LORD OF THE LOST 2026</p>
+
+        <div class="right legal-link">
+            <a href="/impressum.html" target="_blank" rel="noopener noreferrer">IMPRESSUM/DATENSCHUTZ</a>
+        </div>
+    </footer>
 </body>
-
-<!-- Footer -->
-<footer class="footer">
-
-    <!-- SOCIAL MEDIA -->
-    <div class="center">
-        <a class="fab fa-facebook fa-facebook" href="https://www.facebook.com/lordofthelost"
-           style="text-decoration: none;"
-           target="_blank"></a>
-        <a class="fab fa-instagram " href="https://www.instagram.com/officiallordofthelost"
-           style="text-decoration: none;" target="_blank"></a>
-        <a class="fab fa-spotify " href="https://open.spotify.com/artist/28eLrVsohdXynlnIzQ2VvI"
-           style="text-decoration: none;" target="_blank"></a>
-        <a class="fab fa-vk " href="https://vk.com/lord_of_the_lost" style="text-decoration: none;" target="_blank"></a>
-        <a class="fab fa-youtube " href="https://www.youtube.com/channel/UCKmi2SZRPoCqXA01qtzIqrw"
-           style="text-decoration: none;" target="_blank"></a>
-        <a class="fab fa-twitter " href="https://twitter.com/lordofthelost?lang=de" style="text-decoration: none;"
-           target="_blank"></a>
-        <a class="fab fa-telegram " href="https://t.me/lordtele" style="text-decoration: none;" target="_blank"></a>
-        <a class="fab fa-twitch " href="https://www.twitch.tv/officiallordofthelost" style="text-decoration: none;"
-           target="_blank"></a>
-        <a class="fab fa-tiktok fa-tiktok" href="https://www.tiktok.com/@lordofthelostofficial"
-           style="text-decoration: none;" target="_blank"></a>
-
-        <!-- COPYRIGHT + getYear-->
-
-        <p style="color: white">&#169 LORD OF THE LOST 2026</p>
-    </div>
-
-    <!-- DATENSCHUTZ/IMPRESSUM -->
-    <div class="right">
-        <a href="/impressum.html" target="_blank">IMPRESSUM/DATENSCHUTZ</a>
-    </div>
-</footer>
-
 </html>
